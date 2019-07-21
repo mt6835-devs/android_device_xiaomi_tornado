@@ -121,5 +121,9 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := mt6835
 
+# SPL
+VENDOR_SECURITY_PATCH := 2026-02-01
+BOOT_SECURITY_PATCH := 2026-02-01
+
 # Inherit the proprietary files
 include vendor/xiaomi/tornado/BoardConfigVendor.mk
