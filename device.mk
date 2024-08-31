@@ -75,6 +75,7 @@ PRODUCT_PACKAGES += \
     init.mt6835.rc \
     init.cgroup.rc \
     init.mt6835.usb.rc \
+    init.recovery.mt6835.rc \
     init.mtkgki.rc \
     init.project.rc \
     init.sensor_2_0.rc \
