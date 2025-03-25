@@ -21,6 +21,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/xiaomi/tornado',
     'hardware/mediatek',
+    'hardware/xiaomi',
 ]
 
 
