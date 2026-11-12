@@ -10,11 +10,12 @@ vendor/lib64/libaal_key.so
 vendor/lib64/libaal_mtk.so
 
 # Audio
-vendor/firmware/awinic_params.bin
-vendor/firmware/awinic_sinwave_params.bin
+vendor/firmware/sipa.bin
+vendor/firmware/frsm-spk1.bin
 vendor/lib64/hw/audio.primary.mediatek.so:vendor/lib64/hw/audio.primary.mt6835.so;FIX_SONAME
 vendor/lib64/hw/audio.r_submix.mediatek.so:vendor/lib64/hw/audio.r_submix.mt6835.so;FIX_SONAME
-vendor/lib64/hw/awinic.audio.effect.so;FIX_SONAME
+vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_iir.so
 vendor/lib64/libalsautils.so:vendor/lib64/libalsautils-stock.so;FIX_SONAME
