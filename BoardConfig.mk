@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/air
-KERNEL_PATH := device/xiaomi/air-kernel
+DEVICE_PATH := device/xiaomi/tornado
+KERNEL_PATH := device/xiaomi/tornado-kernel
 
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
@@ -38,7 +38,7 @@ TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_VARIANT := cortex-a76
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := air
+TARGET_OTA_ASSERT_DEVICE := tornado
 
 # Boot image
 BOARD_BOOT_HEADER_VERSION := 4
@@ -78,7 +78,7 @@ PRODUCT_COPY_FILES += \
 TARGET_NO_KERNEL_OVERRIDE := true
 
 # Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := device/xiaomi/air-kernel/kernel-headers
+TARGET_KERNEL_SOURCE := device/xiaomi/tornado-kernel/kernel-headers
 
 # Board Info
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
@@ -97,7 +97,7 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(KERNE
 BOOT_KERNEL_MODULES := $(BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD) $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD)
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := air
+TARGET_BOOTLOADER_BOARD_NAME := tornado
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -226,4 +226,4 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Inherit the proprietary files
-include vendor/xiaomi/air/BoardConfigVendor.mk
+include vendor/xiaomi/tornado/BoardConfigVendor.mk

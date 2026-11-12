@@ -18,7 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Inherit common MediaTek IMS
 $(call inherit-product, vendor/mediatek/ims/ims.mk)
 
-DEVICE_PATH := device/xiaomi/air
+DEVICE_PATH := device/xiaomi/tornado
 
 # Linker config
 PRODUCT_VENDOR_LINKER_CONFIG_FRAGMENTS += \
@@ -343,4 +343,4 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.wifi.direct.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.direct.xml
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/xiaomi/air/air-vendor.mk)
+$(call inherit-product, vendor/xiaomi/tornado/tornado-vendor.mk)
